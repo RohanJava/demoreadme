@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590411202818' stop='1590411262931'>
+    <name>JSON.org page</name>
+    <title>JSON.org page</title>
+    <test-cases>
+        <test-case start='1590411202819' status='passed' stop='1590411202824'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-81.0.4044.138'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1590411202824' status='broken' stop='1590411262924'>
+            <name>should load within performance budget</name>
+            <title>should load within performance budget</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-81.0.4044.138'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\DMH-E2E\test\performancetest.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\DMH-E2E\test\performancetest.js)
+                    at Test.Runnable._timeoutError (C:\DMH-E2E\node_modules\mocha\lib\runnable.js:463:10)
+                    at Timeout.&lt;anonymous> (C:\DMH-E2E\node_modules\mocha\lib\runnable.js:267:24)
+                    at listOnTimeout (internal/timers.js:531:17)
+                    at processTimers (internal/timers.js:475:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1590411262926' status='passed' stop='1590411262929'>
+            <name>"after all" hook</name>
+            <title>"after all" hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-81.0.4044.138'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

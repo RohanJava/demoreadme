@@ -1,4 +1,4 @@
-class BlazePage{
+ class BlazePage{
 
 get dmh(){
     return $('div.header__nav__wrapper');
